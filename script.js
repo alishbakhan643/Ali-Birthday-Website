@@ -28,17 +28,14 @@ const finalSection = document.querySelector(".final-section");
 // PHOTOS
 // ==========================
 
+
+
 const photos = [
-
-"images/Ali0.jpeg",
-
-"images/01.jpeg",
-
-"images/02.jpeg",
-
-"images/03.jpeg",
-
-"images/04.jpeg"
+"Ali0.jpeg",
+"01.jpeg",
+"02.jpeg",
+"03.jpeg",
+"04.jpeg"
 
 ];
 
@@ -64,7 +61,7 @@ const captions = [
 // LOVE LETTER
 // ==========================
 
-const letter = `Dear Ali ❤️
+const letter = Dear Ali ❤️
 
 Happy Birthday, my dearest.
 
@@ -72,7 +69,7 @@ When we talked for the very first time, I never imagined that one day you would 
 
 Now, life without you feels incomplete. Sometimes I just want to close my eyes and imagine you standing in front of me, so I can look at you for as long as I want and tell you how deeply I love you.
 
-اس قدر کشش ہے تمہاری اداؤں میں،
+اس قدر کشش ہے تمہاری اداؤں میں
 ہم اگر تم ہوتے تو خود سے عشق کر لیتے۔ ❤️
 
 You are more precious to me than my own life. Not a single day passes without thinking about you, and my heart never truly feels at peace when you're away.
