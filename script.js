@@ -1,3 +1,4 @@
+alert("New Script Loaded");
 // ==========================
 // ELEMENTS
 // ==========================
@@ -61,30 +62,18 @@ const captions = [
 // LOVE LETTER
 // ==========================
 
-const letter = Dear Ali ❤️
+ const letter = `Dear Ali ❤️
 
 Happy Birthday, my dearest.
 
 When we talked for the very first time, I never imagined that one day you would become one of the most precious people in my life.
 
-Now, life without you feels incomplete. Sometimes I just want to close my eyes and imagine you standing in front of me, so I can look at you for as long as I want and tell you how deeply I love you.
+Now, life without you feels incomplete...
 
-اس قدر کشش ہے تمہاری اداؤں میں
+اس قدر کشش ہے تمہاری اداؤں میں،
 ہم اگر تم ہوتے تو خود سے عشق کر لیتے۔ ❤️
 
-You are more precious to me than my own life. Not a single day passes without thinking about you, and my heart never truly feels at peace when you're away.
-
-Your eyes... I honestly don't have the right words to describe them. Every time I think of them, my heart smiles.
-
-Your care, your respect, your loyalty, and your love have completely changed my world. They made me fall in love with you more than I ever thought possible.
-
-No matter where life takes us, I hope we always remain in each other's prayers and hearts. ❤️
-
-Every day I pray to Allah that He blesses you with happiness, protects you from every hardship, and, if it is best for us, brings us together in a beautiful halal way.
-
-Thank you for being the reason behind so many of my smiles.
-
-I love you today, tomorrow, forever and ever. ❤️
+...
 
 Forever Yours,
 
@@ -119,34 +108,26 @@ photoSection.classList.remove("hidden");
 // ==========================
 // NEXT MEMORY
 // ==========================
-
 nextBtn.addEventListener("click", () => {
+console.log(current);
+    if (current < photos.length - 1) {
 
-current++;
+        current++;
 
-if(current < photos.length){
+        photo.src = photos[current];
+        caption.textContent = captions[current];
 
-photo.src = photos[current];
+        if (current === photos.length - 1) {
+            nextBtn.innerHTML = "💌 Read My Letter";
+        }
 
-caption.innerHTML = captions[current];
+    } else {
 
-}
+        photoSection.classList.add("hidden");
+        letterSection.classList.remove("hidden");
+        typeLetter();
 
-if(current === photos.length-1){
-
-nextBtn.innerHTML="💌 Read My Letter";
-
-}
-
-if(current >= photos.length){
-
-photoSection.classList.add("hidden");
-
-letterSection.classList.remove("hidden");
-
-typeLetter();
-
-}
+    }
 
 });
 
